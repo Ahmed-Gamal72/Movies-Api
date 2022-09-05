@@ -14,6 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddTransient<IGenresService, GenresService>();
 builder.Services.AddTransient<IMoviesService, MoviesService>();
+builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddCors();
 builder.Services.AddSwaggerGen(options =>
 {
